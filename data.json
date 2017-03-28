@@ -1,0 +1,263 @@
+{
+    "project": {},
+    "files": {
+        "polyfill.js": {
+            "name": "polyfill.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "subnav-new.js": {
+            "name": "subnav-new.js",
+            "modules": {
+                "component": 1
+            },
+            "classes": {
+                "subnav": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "component": {
+            "name": "component",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "subnav": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "subnav-new.js",
+            "line": 1,
+            "description": "Module that handles all helpx-specific overrides for the new Subnav.\n\nWiki here: https://wiki.corp.adobe.com/pages/viewpage.action?pageId=1214972615",
+            "static": 1
+        }
+    },
+    "classes": {
+        "subnav": {
+            "name": "subnav",
+            "shortname": "subnav",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "component",
+            "namespace": "",
+            "file": "subnav-new.js",
+            "line": 1,
+            "description": "Module that handles all helpx-specific overrides for the new Subnav.\n\nWiki here: https://wiki.corp.adobe.com/pages/viewpage.action?pageId=1214972615"
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "polyfill.js",
+            "line": 3,
+            "description": "Polyfill for ES6 String.includes method",
+            "itemtype": "method",
+            "name": "includes",
+            "return": {
+                "description": "void"
+            },
+            "params": [
+                {
+                    "name": "search,",
+                    "description": "start"
+                }
+            ],
+            "class": "subnav"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 13,
+            "description": "The current template of the page",
+            "itemtype": "property",
+            "name": "_currentTemplate",
+            "type": "String",
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 21,
+            "description": "HTML Id for 'Learn & Support' Link",
+            "itemtype": "property",
+            "name": "_learnSupportId",
+            "type": "String",
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 29,
+            "description": "HTML Id for 'Beginner's Guide' Link",
+            "itemtype": "property",
+            "name": "_beginnersGuideId",
+            "type": "String",
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 37,
+            "description": "HTML Id for 'User Guide' Link",
+            "itemtype": "property",
+            "name": "_userGuideId",
+            "type": "String",
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 44,
+            "description": "HTML Id for 'Tutorials' Link",
+            "itemtype": "property",
+            "name": "_tutorialsId",
+            "type": "String",
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 52,
+            "description": "Fired whenever a page has a user-guide-band and it successfully loads.\nIn this scenario, underline the 'User Guide' link in the subnav.",
+            "itemtype": "event",
+            "name": "user-guide-band-loaded",
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 64,
+            "description": "Returns true if the current page is part of the Learn Family.\nThis is defined as as a family to allow expansion of more conditions/templates/logic if needed\nIn the future.",
+            "itemtype": "method",
+            "name": "isLearnFamily",
+            "return": {
+                "description": "boolean"
+            },
+            "params": [
+                {
+                    "name": "_currentTemplate",
+                    "description": ""
+                }
+            ],
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 82,
+            "description": "Returns true if the current page is part of the Hub Family\nThis is defined as as a family to allow expansion of more conditions/templates/logic if needed\nIn the future.",
+            "itemtype": "method",
+            "name": "isHubFamily",
+            "return": {
+                "description": "boolean"
+            },
+            "params": [
+                {
+                    "name": "_currentTemplate",
+                    "description": ""
+                }
+            ],
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 100,
+            "description": "Returns true if the current page is part of the User Guide Family\nThis is defined as as a family to allow expansion of more conditions/templates/logic if needed\nIn the future.",
+            "itemtype": "method",
+            "name": "isUserGuideFamily",
+            "return": {
+                "description": "boolean"
+            },
+            "params": [
+                {
+                    "name": "_currentTemplate",
+                    "description": ""
+                }
+            ],
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 117,
+            "description": "Returns true if the current page is part of the Beginner Guide Family\nThis is defined as as a family to allow expansion of more conditions/templates/logic if needed\nIn the future.",
+            "itemtype": "method",
+            "name": "isBeginnerGuideFamily",
+            "return": {
+                "description": "boolean"
+            },
+            "params": [
+                {
+                    "name": "_currentTemplate",
+                    "description": ""
+                }
+            ],
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 135,
+            "description": "Sets underlines for subnav links based off helpx logic\nIf the current page is part of the Hub Family, then the 'Learn & Support' link is underlined\nIf the current page is part of the Beginner's Guide Family, then the 'Beginner's Guide' link is underlined\nIf the current page is part of the Learn Family, then the 'Tutorials' link is underlined\nIf the current page is part of the User Guide Family, then the 'user Guide' link is underlined",
+            "itemtype": "method",
+            "name": "_setUnderlines",
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "params": [
+                {
+                    "name": "None",
+                    "description": ""
+                }
+            ],
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 175,
+            "description": "Takes an html id (defined as constant variables above) and adds an underline to it.",
+            "itemtype": "method",
+            "name": "underline",
+            "return": {
+                "description": "void"
+            },
+            "params": [
+                {
+                    "name": "id",
+                    "description": ""
+                }
+            ],
+            "class": "subnav",
+            "module": "component"
+        },
+        {
+            "file": "subnav-new.js",
+            "line": 187,
+            "description": "Initializes helpx specific subnav code",
+            "itemtype": "method",
+            "name": "init",
+            "return": {
+                "description": "void"
+            },
+            "params": [
+                {
+                    "name": "none",
+                    "description": ""
+                }
+            ],
+            "class": "subnav",
+            "module": "component"
+        }
+    ],
+    "warnings": []
+}
